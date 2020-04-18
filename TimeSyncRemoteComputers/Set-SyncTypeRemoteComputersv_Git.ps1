@@ -613,7 +613,7 @@ function Set-RegFileRemoteComputer
 do
 {
   
-  Write-host "Deseja Alterar o Sync Type (1) ou Aplicar a Chave de Registro do Horário de Verão (2)? " -ForegroundColor Yellow -BackgroundColor Black
+  Write-host "Do you want to change the Time Sync Type (1) or Apply Registry Key for Daylight Saving Time (2)? " -ForegroundColor Yellow -BackgroundColor Black
   
   Write-Output "`n"
 
