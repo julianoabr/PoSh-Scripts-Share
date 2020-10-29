@@ -1,5 +1,5 @@
 #Requires -RunAsAdministrator
-#Requires -Version 4.0
+#Requires -Version 5.0
 <#
 .Synopsis
    Generate and Export BPA Results
