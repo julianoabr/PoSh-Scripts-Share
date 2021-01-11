@@ -49,6 +49,8 @@ function Validate-ipAddress ([string] $IP)
        
 Return $IsIP
 
+$Script:NetIPAddress = $IP
+
 }#END OF FUNCTION VALIDATE-IPADDRESS
 
 
