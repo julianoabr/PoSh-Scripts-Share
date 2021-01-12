@@ -44,9 +44,9 @@ function Validate-NetMask ([string] $netMask)
         if (!($netMask))
         {
             
-            $IPnetMask = Read-Host -Prompt "Type the a Valid NetMask"
+            $IPNetMask = Read-Host -Prompt "Type the a Valid NetMask"
 
-            [System.string]$netMask = $IPnetMask.ToString()
+            [System.string]$netMask = $IPNetMask.ToString()
 
         }
        
@@ -58,6 +58,10 @@ function Validate-NetMask ([string] $netMask)
         } 
        
 Return $IsNetMask 
+
+#YOU CAN USE THE VARIABLE WITH NAME NetMaskAddress in scripts, because the scope is script. More info about: 
+#https://docs.microsoft.com/pt-br/powershell/module/microsoft.powershell.core/about/about_scopes?view=powershell-7.1
+$Script:NetMaskAddress = $NetMask
 
 }#end of Function 
 
