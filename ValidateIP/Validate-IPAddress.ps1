@@ -49,6 +49,8 @@ function Validate-ipAddress ([string] $IP)
        
 Return $IsIP
 
+#YOU CAN USE THE VARIABLE WITH NAME NetIPAddress in scripts, because the scope is script. More info about: 
+#https://docs.microsoft.com/pt-br/powershell/module/microsoft.powershell.core/about/about_scopes?view=powershell-7.1
 $Script:NetIPAddress = $IP
 
 }#END OF FUNCTION VALIDATE-IPADDRESS
